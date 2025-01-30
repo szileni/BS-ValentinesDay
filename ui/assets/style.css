@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+}
+body{
+    overflow: hidden;
+}
+
+.envelope-container {
+    position: absolute;
+    width: 40vw;
+    height: 70vh;
+    /* background-color: red; */
+    background: url('./img/envelope.png') center / 100% 100% no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s ease-in-out background;
+}
+
+.envelope-container .seal {
+    position: relative;
+    /* background-color: red; */
+    width: 5vw;
+    height: 5vw;
+    top: 50%;
+    left: 42%;
+    border-radius: 50%;
+}
+
+.envelope-container .paper {
+    position: relative;
+
+    width: 26.1vw;
+    height: 17vw;
+    top: 33.5%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
+    /* border-radius: 50%; */
+}
+
+.paper-container {
+    position: absolute;
+    width: 40vw;
+    height: 90vh;
+    /* background-color: red; */
+    background: url('./img/papper.png') center / 100% 100% no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.paper-container #text {
+    position: absolute;
+    top: 36.5%;
+    left: 25%;
+    background: none;
+    resize: none;
+    width: 20vw;
+    height: 30vh;
+    overflow-y: auto;
+    font-size: 0.6vw;
+    line-height: 2.6;
+    outline: none;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Lobster Two", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #8F6F64;
+    border: none;
+}
+
+.paper-container #from,
+.paper-container #to {
+    text-align: left;
+    border: none;
+    background: none;
+    position: absolute;
+    font-size: 0.6vw;
+    width: 30%;
+    color: #8F6F64;
+    font-family: "Lobster Two", serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.paper-container #from {
+    top: 28.2%;
+    left: 34.3%;
+}
+
+.paper-container #to {
+    top: 31.3%;
+    left: 33%;
+}
+
+.paper-container .savebutton {
+    position: absolute;
+    /* background-color: red; */
+    /* background-color: #e1b8b2; */
+    background: url('./img/ykt.png') center / 100% 100% no-repeat;
+    font-family: "Lobster Two", serif;
+    font-weight: 700;
+    font-style: normal;
+    /* padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh; */
+    width: 3vw;
+    height: 6vh;
+    border-radius: 10%;
+    top: 70%;
+    left: 27.5%;
+    transition: 1s;
+    cursor: pointer;
+}
+.paper-container .savebutton:hover {
+    transform: scale(1.2);
+}
+.paper-container .savebutton:active {
+    transform: scale(0.9);
+}
+
+
+.wheel-spinner-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+.wheel-spinner-container .wheel-spinner {
+    position: absolute;
+    background: url('./img/britney.png') center / 100% 100% no-repeat;
+    width: 40vw;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.wheel-spinner-container .rose {
+    position: absolute;
+    background: url('./img/rose.png') center / 100% 100% no-repeat;
+    width: 5vw;
+    height: 10vh;
+    top: 26%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+}
+
+.wheel-spinner-container .question {
+    position: absolute;
+    /* background-color: red; */
+    width: 40vw;
+    height: 10vh;
+    background: url('./img/box.png') center / 100% 100% no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wheel-spinner-container .question .task {
+    position: absolute;
+    /* background-color: red; */
+    width: 32vw;
+    height: 5.6vh;
+    top: 15%;
+    left: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b13d63;
+    /* text-shadow: black 2px 2px 10px; */
+    font-family: "Lobster Two", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1vw;
+
+}
+
+.bscript {
+    position: absolute;
+    width: 9vw;
+    height: 18vh;
+    /* background-color: red; */
+    top: 41%;
+    left: 45.6%;
+    border-radius: 50%;
+}
+
+
+.players {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    font-size: 1vw;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+    border-radius: 3vw;
+}
+
+.player:hover {
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.9);
+}
+
+.player .box {
+    padding-left: 0.3vw;
+    padding-right: 0.3vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+}
+
+.player .text {
+    text-align: center;
+    align-items: center;
+    padding-left: 0.3vw;
+    padding-right: 0.3vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    text-shadow: 1px -1px rgb(0, 0, 0);
+}
